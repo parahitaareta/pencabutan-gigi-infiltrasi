@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="id">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modul Pencabutan Gigi</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Source+Serif+Pro:wght@600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'DM Sans', sans-serif; }
+    h1, h2, h3 { font-family: 'Source Serif Pro', serif; }
+    .nav-link.active { background: #0d9488; color: #fff; }
+    .content-section { display: none; animation: fadeUp 0.3s ease forwards; }
+    .content-section.active { display: block; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .accordion-content.open { max-height: 2000px; }
+  </style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/resizing_sdk.js" type="text/javascript"></script>
+ <script src="/_sdk/telemetry_sdk.js"></script></head>
+ <body data-template-id="__page-root" class="w-full min-h-screen">
+  <div class="flex flex-col w-full min-h-screen"><!-- Hero -->
+   <header class="relative h-56 md:h-72 overflow-hidden"><img data-template-id="hero-img" class="canva-image w-full h-full object-cover" loading="lazy">
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent flex items-end p-8">
+     <div class="flex-1">
+      <h1 data-template-id="hero-title" class="canva-text text-white text-3xl md:text-4xl font-bold"></h1>
+      <p data-template-id="hero-subtitle" class="canva-text text-teal-200 mt-2"></p>
+     </div>
+    </div><img data-template-id="logo-poltekkes" class="canva-image absolute top-3 left-3 w-32 h-32 md:w-40 md:h-40 object-contain" loading="lazy">
+   </header><!-- Navigation -->
+   <nav class="sticky top-0 z-50 bg-slate-900 text-white overflow-x-auto">
+    <div class="flex gap-0 px-4 py-3 min-w-max"><button type="button" class="nav-link active px-4 py-2 rounded text-sm hover:bg-slate-700 transition whitespace-nowrap" data-section="pendahuluan">Pendahuluan</button> <button type="button" class="nav-link px-4 py-2 rounded text-sm hover:bg-slate-700 transition whitespace-nowrap" data-section="pengertian">A. Pengertian</button> <button type="button" class="nav-link px-4 py-2 rounded text-sm hover:bg-slate-700 transition whitespace-nowrap" data-section="indikasi">B. Indikasi</button> <button type="button" class="nav-link px-4 py-2 rounded text-sm hover:bg-slate-700 transition whitespace-nowrap" data-section="kontraindikasi">C. Kontraindikasi</button> <button type="button" class="nav-link px-4 py-2 rounded text-sm hover:bg-slate-700 transition whitespace-nowrap" data-section="alat">D. Alat</button> <button type="button" class="nav-link px-4 py-2 rounded text-sm hover:bg-slate-700 transition whitespace-nowrap" data-section="bahan">E. Bahan</button> <button type="button" class="nav-link px-4 py-2 rounded text-sm hover:bg-slate-700 transition whitespace-nowrap" data-section="prosedur">F. Prosedur</button> <button type="button" class="nav-link px-4 py-2 rounded text-sm hover:bg-slate-700 transition whitespace-nowrap" data-section="pasca">G. Instruksi Pasca</button>
+    </div>
+   </nav><!-- Main Content -->
+   <main class="flex-1">
+    <div class="max-w-4xl mx-auto px-6 py-10"><!-- Pendahuluan -->
+     <section id="pendahuluan" class="content-section active space-y-4">
+      <section class="bg-blue-50 border-l-4 border-blue-600 rounded-r-lg p-6 mb-8">
+       <p data-template-id="deskripsi-modul-text" class="canva-text text-slate-700 leading-relaxed text-sm"></p>
+      </section>
+      <section class="bg-teal-50 border-l-4 border-teal-600 rounded-r-lg p-6 mb-10">
+       <h2 data-template-id="tujuan-title" class="canva-text text-teal-900 font-bold mb-3"></h2>
+       <ol class="list-decimal list-inside space-y-1 text-slate-700 text-sm">
+        <li data-template-id="tujuan-1" class="canva-text"></li>
+        <li data-template-id="tujuan-2" class="canva-text"></li>
+        <li data-template-id="tujuan-3" class="canva-text"></li>
+        <li data-template-id="tujuan-4" class="canva-text"></li>
+        <li data-template-id="tujuan-5" class="canva-text"></li>
+        <li data-template-id="tujuan-6" class="canva-text"></li>
+        <li data-template-id="tujuan-7" class="canva-text"></li>
+       </ol>
+      </section>
+     </section><!-- A. Pengertian -->
+     <section id="pengertian" class="content-section active space-y-4">
+      <h2 data-template-id="pengertian-title" class="canva-text text-2xl font-bold text-slate-900"></h2>
+      <p data-template-id="pengertian-text" class="canva-text text-slate-700 leading-relaxed"></p>
+     </section><!-- B. Indikasi -->
+     <section id="indikasi" class="content-section space-y-4">
+      <h2 data-template-id="indikasi-title" class="canva-text text-2xl font-bold text-slate-900"></h2>
+      <h3 data-template-id="indikasi-susu-title" class="canva-text text-lg font-bold text-teal-800"></h3>
+      <ul class="list-disc list-inside space-y-1 text-slate-700 text-sm">
+       <li data-template-id="indikasi-susu-1" class="canva-text"></li>
+       <li data-template-id="indikasi-susu-2" class="canva-text"></li>
+       <li data-template-id="indikasi-susu-3" class="canva-text"></li>
+      </ul>
+      <h3 data-template-id="indikasi-permanen-title" class="canva-text text-lg font-bold text-teal-800"></h3>
+      <ul class="list-disc list-inside space-y-1 text-slate-700 text-sm">
+       <li data-template-id="indikasi-p-1" class="canva-text"></li>
+       <li data-template-id="indikasi-p-2" class="canva-text"></li>
+       <li data-template-id="indikasi-p-3" class="canva-text"></li>
+       <li data-template-id="indikasi-p-4" class="canva-text"></li>
+       <li data-template-id="indikasi-p-5" class="canva-text"></li>
+       <li data-template-id="indikasi-p-6" class="canva-text"></li>
+       <li data-template-id="indikasi-p-7" class="canva-text"></li>
+       <li data-template-id="indikasi-p-8" class="canva-text"></li>
+       <li data-template-id="indikasi-p-9" class="canva-text"></li>
+       <li data-template-id="indikasi-p-10" class="canva-text"></li>
+       <li data-template-id="indikasi-p-11" class="canva-text"></li>
+       <li data-template-id="indikasi-p-12" class="canva-text"></li>
+      </ul>
+     </section><!-- C. Kontraindikasi -->
+     <section id="kontraindikasi" class="content-section space-y-4">
+      <h2 data-template-id="kontra-title" class="canva-text text-2xl font-bold text-slate-900"></h2>
+      <h3 data-template-id="kontra-lokal-title" class="canva-text text-lg font-bold text-red-800"></h3>
+      <ul class="list-disc list-inside space-y-1 text-slate-700 text-sm">
+       <li data-template-id="kontra-lokal-1" class="canva-text"></li>
+       <li data-template-id="kontra-lokal-2" class="canva-text"></li>
+       <li data-template-id="kontra-lokal-3" class="canva-text"></li>
+       <li data-template-id="kontra-lokal-4" class="canva-text"></li>
+      </ul>
+      <h3 data-template-id="kontra-umum-title" class="canva-text text-lg font-bold text-red-800"></h3>
+      <div class="space-y-2"><button type="button" class="accordion-btn w-full flex justify-between items-center bg-red-50 px-4 py-3 rounded-lg text-left"> <span data-template-id="kontra-jantung-title" class="canva-text font-medium text-red-900"></span> <i data-lucide="chevron-down" style="width:18px;height:18px" class="text-red-700 transition-transform"></i> </button>
+       <div class="accordion-content px-4 text-sm text-slate-700">
+        <ul class="list-disc list-inside py-2 space-y-1">
+         <li data-template-id="kontra-jantung-1" class="canva-text"></li>
+         <li data-template-id="kontra-jantung-2" class="canva-text"></li>
+         <li data-template-id="kontra-jantung-3" class="canva-text"></li>
+         <li data-template-id="kontra-jantung-4" class="canva-text"></li>
+         <li data-template-id="kontra-jantung-5" class="canva-text"></li>
+         <li data-template-id="kontra-jantung-6" class="canva-text"></li>
+        </ul>
+       </div><button type="button" class="accordion-btn w-full flex justify-between items-center bg-red-50 px-4 py-3 rounded-lg text-left"> <span data-template-id="kontra-hipertensi-title" class="canva-text font-medium text-red-900"></span> <i data-lucide="chevron-down" style="width:18px;height:18px" class="text-red-700 transition-transform"></i> </button>
+       <div class="accordion-content px-4 text-sm text-slate-700">
+        <ul class="list-disc list-inside py-2 space-y-1">
+         <li data-template-id="kontra-hiper-1" class="canva-text"></li>
+         <li data-template-id="kontra-hiper-2" class="canva-text"></li>
+         <li data-template-id="kontra-hiper-3" class="canva-text"></li>
+        </ul>
+       </div><button type="button" class="accordion-btn w-full flex justify-between items-center bg-red-50 px-4 py-3 rounded-lg text-left"> <span data-template-id="kontra-dm-title" class="canva-text font-medium text-red-900"></span> <i data-lucide="chevron-down" style="width:18px;height:18px" class="text-red-700 transition-transform"></i> </button>
+       <div class="accordion-content px-4 text-sm text-slate-700">
+        <ul class="list-disc list-inside py-2 space-y-1">
+         <li data-template-id="kontra-dm-1" class="canva-text"></li>
+         <li data-template-id="kontra-dm-2" class="canva-text"></li>
+         <li data-template-id="kontra-dm-3" class="canva-text"></li>
+         <li data-template-id="kontra-dm-4" class="canva-text"></li>
+         <li data-template-id="kontra-dm-5" class="canva-text"></li>
+         <li data-template-id="kontra-dm-6" class="canva-text"></li>
+        </ul>
+       </div><button type="button" class="accordion-btn w-full flex justify-between items-center bg-red-50 px-4 py-3 rounded-lg text-left"> <span data-template-id="kontra-hepatitis-title" class="canva-text font-medium text-red-900"></span> <i data-lucide="chevron-down" style="width:18px;height:18px" class="text-red-700 transition-transform"></i> </button>
+       <div class="accordion-content px-4 text-sm text-slate-700">
+        <ul class="list-disc list-inside py-2 space-y-1">
+         <li data-template-id="kontra-hep-1" class="canva-text"></li>
+         <li data-template-id="kontra-hep-2" class="canva-text"></li>
+         <li data-template-id="kontra-hep-3" class="canva-text"></li>
+         <li data-template-id="kontra-hep-4" class="canva-text"></li>
+        </ul>
+       </div>
+      </div>
+     </section><!-- D. Alat -->
+     <section id="alat" class="content-section space-y-4">
+      <h2 data-template-id="alat-title" class="canva-text text-2xl font-bold text-slate-900"></h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+       <div class="bg-white rounded-xl shadow p-4 text-center"><img data-template-id="alat-od-img" class="canva-image w-full h-40 object-cover rounded-lg mb-3" loading="lazy">
+        <p data-template-id="alat-od-label" class="canva-text font-medium text-slate-800"></p>
+       </div>
+       <div class="bg-white rounded-xl shadow p-4 text-center"><img data-template-id="alat-tang-img" class="canva-image w-full h-40 object-cover rounded-lg mb-3" loading="lazy">
+        <p data-template-id="alat-tang-label" class="canva-text font-medium text-slate-800"></p>
+       </div>
+       <div class="bg-white rounded-xl shadow p-4 text-center"><img data-template-id="alat-citoject-img" class="canva-image w-full h-40 object-cover rounded-lg mb-3" loading="lazy">
+        <p data-template-id="alat-citoject-label" class="canva-text font-medium text-slate-800"></p>
+       </div>
+       <div class="bg-white rounded-xl shadow p-4 text-center"><img data-template-id="alat-jarum-img" class="canva-image w-full h-40 object-cover rounded-lg mb-3" loading="lazy">
+        <p data-template-id="alat-jarum-label" class="canva-text font-medium text-slate-800"></p>
+       </div>
+      </div>
+     </section><!-- E. Bahan -->
+     <section id="bahan" class="content-section space-y-4">
+      <h2 data-template-id="bahan-title" class="canva-text text-2xl font-bold text-slate-900"></h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+       <div class="bg-white rounded-xl shadow p-4 text-center"><img data-template-id="bahan-iodine-img" class="canva-image w-full h-auto object-contain rounded-lg mb-3" loading="lazy">
+        <p data-template-id="bahan-iodine-label" class="canva-text font-medium text-slate-800"></p>
+       </div>
+       <div class="bg-white rounded-xl shadow p-4 text-center"><img data-template-id="bahan-topikal-img" class="canva-image w-full h-auto object-contain rounded-lg mb-3" loading="lazy">
+        <p data-template-id="bahan-topikal-label" class="canva-text font-medium text-slate-800"></p>
+       </div>
+       <div class="bg-white rounded-xl shadow p-4 text-center"><img data-template-id="bahan-cottonpellet-img" class="canva-image w-full h-36 object-cover rounded-lg mb-3" loading="lazy">
+        <p data-template-id="bahan-cottonpellet-label" class="canva-text font-medium text-slate-800"></p>
+       </div>
+       <div class="bg-white rounded-xl shadow p-4 text-center"><img data-template-id="bahan-cottonroll-img" class="canva-image w-full h-36 object-cover rounded-lg mb-3" loading="lazy">
+        <p data-template-id="bahan-cottonroll-label" class="canva-text font-medium text-slate-800"></p>
+       </div>
+       <div class="bg-white rounded-xl shadow p-4 text-center"><img data-template-id="bahan-tampon-img" class="canva-image w-full h-36 object-cover rounded-lg mb-3" loading="lazy">
+        <p data-template-id="bahan-tampon-label" class="canva-text font-medium text-slate-800"></p>
+       </div>
+       <div class="bg-white rounded-xl shadow p-4 text-center"><img data-template-id="bahan-pehacain-img" class="canva-image w-full h-36 object-cover rounded-lg mb-3" loading="lazy">
+        <p data-template-id="bahan-pehacain-label" class="canva-text font-medium text-slate-800"></p>
+       </div>
+      </div>
+     </section><!-- F. Prosedur -->
+     <section id="prosedur" class="content-section space-y-4">
+      <h2 data-template-id="prosedur-title" class="canva-text text-2xl font-bold text-slate-900"></h2>
+      <ol class="space-y-3">
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">1</span><span data-template-id="step-1" class="canva-text text-slate-700 text-sm"></span></li>
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">2</span><span data-template-id="step-2" class="canva-text text-slate-700 text-sm"></span></li>
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">3</span><span data-template-id="step-3" class="canva-text text-slate-700 text-sm"></span></li>
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">4</span><span data-template-id="step-4" class="canva-text text-slate-700 text-sm"></span></li>
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">5</span><span data-template-id="step-5" class="canva-text text-slate-700 text-sm"></span></li>
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">6</span><span data-template-id="step-6" class="canva-text text-slate-700 text-sm"></span></li>
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">7</span><span data-template-id="step-7" class="canva-text text-slate-700 text-sm"></span></li>
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">8</span><span data-template-id="step-8" class="canva-text text-slate-700 text-sm"></span></li>
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">9</span><span data-template-id="step-9" class="canva-text text-slate-700 text-sm"></span></li>
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">10</span><span data-template-id="step-10" class="canva-text text-slate-700 text-sm"></span></li>
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">11</span><span data-template-id="step-11" class="canva-text text-slate-700 text-sm"></span></li>
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">12</span><span data-template-id="step-12" class="canva-text text-slate-700 text-sm"></span></li>
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">13</span><span data-template-id="step-13" class="canva-text text-slate-700 text-sm"></span></li>
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">14</span><span data-template-id="step-14" class="canva-text text-slate-700 text-sm"></span></li>
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">15</span><span data-template-id="step-15" class="canva-text text-slate-700 text-sm"></span></li>
+       <li class="flex gap-3 items-start"><span class="flex-shrink-0 w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center text-xs font-bold">16</span><span data-template-id="step-16" class="canva-text text-slate-700 text-sm"></span></li>
+      </ol>
+     </section><!-- G. Instruksi Pasca -->
+     <section id="pasca" class="content-section space-y-4">
+      <h2 data-template-id="pasca-title" class="canva-text text-2xl font-bold text-slate-900"></h2>
+      <div class="grid gap-3">
+       <div class="flex gap-3 items-start bg-amber-50 p-4 rounded-lg">
+        <i data-lucide="clock" style="width:20px;height:20px" class="text-amber-600 flex-shrink-0 mt-0.5"></i><span data-template-id="pasca-1" class="canva-text text-slate-700 text-sm"></span>
+       </div>
+       <div class="flex gap-3 items-start bg-blue-50 p-4 rounded-lg">
+        <i data-lucide="snowflake" style="width:20px;height:20px" class="text-blue-600 flex-shrink-0 mt-0.5"></i><span data-template-id="pasca-2" class="canva-text text-slate-700 text-sm"></span>
+       </div>
+       <div class="flex gap-3 items-start bg-green-50 p-4 rounded-lg">
+        <i data-lucide="shield" style="width:20px;height:20px" class="text-green-600 flex-shrink-0 mt-0.5"></i><span data-template-id="pasca-3" class="canva-text text-slate-700 text-sm"></span>
+       </div>
+       <div class="flex gap-3 items-start bg-orange-50 p-4 rounded-lg">
+        <i data-lucide="utensils" style="width:20px;height:20px" class="text-orange-600 flex-shrink-0 mt-0.5"></i><span data-template-id="pasca-4" class="canva-text text-slate-700 text-sm"></span>
+       </div>
+       <div class="flex gap-3 items-start bg-purple-50 p-4 rounded-lg">
+        <i data-lucide="bed" style="width:20px;height:20px" class="text-purple-600 flex-shrink-0 mt-0.5"></i><span data-template-id="pasca-5" class="canva-text text-slate-700 text-sm"></span>
+       </div>
+       <div class="flex gap-3 items-start bg-red-50 p-4 rounded-lg">
+        <i data-lucide="cigarette" style="width:20px;height:20px" class="text-red-600 flex-shrink-0 mt-0.5"></i><span data-template-id="pasca-6" class="canva-text text-slate-700 text-sm"></span>
+       </div>
+       <div class="flex gap-3 items-start bg-pink-50 p-4 rounded-lg">
+        <i data-lucide="alert-circle" style="width:20px;height:20px" class="text-pink-600 flex-shrink-0 mt-0.5"></i><span data-template-id="pasca-7" class="canva-text text-slate-700 text-sm"></span>
+       </div>
+      </div>
+     </section>
+    </div>
+   </main>
+  </div>
+  <script src="/_sdk/editing_sdk.js"></script>
+  <script>
+    lucide.createIcons();
+
+    // Section navigation
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('.content-section');
+
+    navLinks.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.section;
+        navLinks.forEach(l => l.classList.remove('active'));
+        btn.classList.add('active');
+        sections.forEach(s => {
+          s.classList.remove('active');
+          if (s.id === target) s.classList.add('active');
+        });
+      });
+    });
+
+    // Accordion
+    document.querySelectorAll('.accordion-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('[data-lucide]');
+        content.classList.toggle('open');
+        icon.style.transform = content.classList.contains('open') ? 'rotate(180deg)' : '';
+      });
+    });
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a02ae071fe91fdb0',t:'MTc3OTk0NjMyNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
